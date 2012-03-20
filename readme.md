@@ -26,7 +26,6 @@ class DefaultController{
 Todo
 --
 * Google Maps abstraction layer
-* Address, AddressComponent, Location entities
 * GMapsApi Service 
 * GMapsApi twig helper
 * GMapsApi street2latlng widget
