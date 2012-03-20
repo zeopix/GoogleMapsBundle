@@ -7,22 +7,22 @@ Using
 Use it anywhere, returns results as doctrine manipulable entities.
 
 	
-<?php
-namespace Acme\DemoBundle\Controller;
+	<?php
+	namespace Acme\DemoBundle\Controller;
 
-use Google\MapsBundle\Geo\Coding;
+	use Google\MapsBundle\Geo\Coding;
 
-class DefaultController{
+	class DefaultController{
 	
-	public function demoAction(){
+		public function demoAction(){
 	
-		$query = new Coding('Barcelona');
+			$query = new Coding('Barcelona');
 		
-		$results = $query->getResults(); //ready to persist to your $em!
+			$results = $query->getResults(); //ready to persist to your $em!
 		
-		return new Response(json_encode($results);
+			return new Response(json_encode($results);
+		}
 	}
-}
 
 
 Todo
