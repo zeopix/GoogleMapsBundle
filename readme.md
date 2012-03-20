@@ -1,7 +1,32 @@
+Install
+--
+Documentation in progress, just a normal symfony2 bundle installation ;)
+
+Using
+--
+
+---
+<?php
+namespace Acme\DemoBundle\Controller;
+
+use Google\MapsBundle\Geo\Coding;
+
+class DefaultController{
+	/* … */
+	public function indexAction(){
+	
+		$query = new Coding('Barcelona');
+		
+		$results = $query->getResults(); //ready to persist to your $em!
+	
+	}
+}
+---
+
 Todo
 --
 * Google Maps abstraction layer
-* GMaps Class Entity
+* Address, AddressComponent, Location entities
 * GMapsApi Service 
 * GMapsApi twig helper
 * GMapsApi street2latlng widget
