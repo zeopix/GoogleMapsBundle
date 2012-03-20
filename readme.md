@@ -5,14 +5,15 @@ Documentation in progress, just a normal symfony2 bundle installation ;)
 Using
 --
 Use it anywhere, returns results as doctrine manipulable entities.
-/*
+
+	
 <?php
 namespace Acme\DemoBundle\Controller;
 
 use Google\MapsBundle\Geo\Coding;
 
 class DefaultController{
-
+	
 	public function demoAction(){
 	
 		$query = new Coding('Barcelona');
@@ -22,7 +23,7 @@ class DefaultController{
 		return new Response(json_encode($results);
 	}
 }
-*/
+
 
 Todo
 --
